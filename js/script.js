@@ -42,4 +42,11 @@ $(function() {
         topSpeed: 1000,
     });
 
+    //aos animation
+    AOS.init({
+        duration: 1000,
+        delay: 400,
+    });
+
+
 })

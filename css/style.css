@@ -9,9 +9,12 @@
       text-decoration: none;
   }
   
-  html {
+  html,
+  body {
       font-size: 15px;
       scroll-behavior: smooth;
+      width: 100%;
+      overflow-x: hidden;
   }
   
   body {
