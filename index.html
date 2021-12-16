@@ -316,26 +316,29 @@
         <div class="inner">
             <h1>Stay in touch</h1>
             <p>Just say hello or drop us a line. You can manualy send us email on <span><a href="#" class="blue">khaleelahmad3886@gmail.com</a></span></p>
-            <form action="" data-aos="flip-up">
+            <form action="#" onsubmit="return Validation();" data-aos="flip-up">
                 <div class="flex-box">
                     <div class="name half-width">
                         <label for="">name</label><br>
-                        <input type="text" placeholder="enter name">
+                        <input type="text" id="name" placeholder="enter name">
+                        <h6 class="error" id="nameError"></h6>
                     </div>
                     <div class="email half-width">
                         <label for="">email</label><br>
-                        <input type="email" placeholder="email address">
+                        <input type="email" id="email" placeholder="email address" style="text-transform: lowercase;">
+                        <h6 class="error" id="emailError"></h6>
                     </div>
                 </div>
                 <div class="sub">
                     <label for="">subject</label><br>
-                    <input type="text" placeholder="subject">
+                    <input type="text" id="sub" placeholder="subject">
+                    <h6 class="error" id="subError"></h6>
                 </div>
                 <div class="msg">
                     <label for="">message</label><br>
                     <textarea name="" id="" cols="30" rows="10" placeholder="enter message..."></textarea>
                 </div>
-                <button class="btn-1 blue-btn" id="contact-btn"><a href="">submit</a></button>
+                <button class="btn-1 blue-btn" id="contact-btn">submit</button>
             </form>
         </div>
     </section>
